@@ -1,0 +1,333 @@
+/*########################layout#############################*/
+body, html, .capa{
+  height: 100%;
+}
+body{
+  background: url('imagens/programacao1.jpg');
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+
+.capa{
+  background: rgba(33,33,33,0.5);
+}
+
+.circle {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+  bottom: 10em;
+}
+
+.circle img {
+  position: relative;
+  width: 100%;
+}
+/*Barra de navegação*/
+.img-logo{
+  height: 40px;
+  width: 132px;
+  display: block;
+  background: url('imagens/logo.png') no-repeat;
+  background-size: contain;
+  color: transparent;
+}
+.rod{
+  background: black;
+  color: white;
+}
+.img-footer{
+  height: 40px;
+  width: 132px;
+  margin-top: 10px;
+  display: inline-block;
+  background: url('imagens/logo.png') no-repeat;
+  background-size: contain;
+  color: transparent;
+}
+
+
+nav.navbar-transparente{
+  padding: 10px 0px;
+  background: rgba(0,0,0,0);
+  border: none;
+}
+
+.navbar-brand{
+  padding: 15px 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a{
+  color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover{
+  color: #9bf0e1;
+  background: none;
+}
+
+.voltar-ao-topo {
+    border: solid rgb(155,240,225);
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    color: rgb(155,240,225);
+    padding: 1em;
+    display: none;
+    text-align: center;
+    padding: .1em .2em .1em .2em;
+    outline: none;
+    z-index: 1;
+  }
+
+.voltar-ao-topo:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+/*Imagem da capa*/
+
+.capa{
+  display: table;
+  width: 100%;
+}
+
+.texto-capa{
+  text-align: center;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+}
+/*botão*/
+
+.btn-custom{
+  color: white;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  text-transform: uppercase;
+  transition: background 0.4s, color 0.4s;
+}
+
+.btn-contato{
+  background: #7c25f8;
+  margin-top: 15px;
+}
+
+.btn-contato:hover{
+  background: #6207e3;
+  color: white;
+}
+
+.btn-destaque{
+  background: #7c25f8;
+  margin-top: 15px;
+}
+
+.btn-destaque:hover{
+  background: #6207e3;
+  color: white;
+}
+
+.btn-branco{
+  border: 2px solid rgb(155,240,225);
+}
+.btn-branco:hover{
+  background: rgb(155,240,225);
+  color: black;
+}
+
+/*secao serviço*/
+
+#servicos{
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#recursos{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sobre{
+  padding: 10px 0px 10px 0px;
+}
+.sobre p{
+  padding top: 10px;
+  font-size: 16px;
+}
+
+/*Efeito das imagens*/
+
+.dg-overlay{
+  margin-bottom: 15px;
+}
+
+.dg-item  .dg-overlay {
+    position: absolute;
+    z-index: 10;
+    top: 5px;
+    right: 20px;
+    bottom: 5px;
+    left: 20px;
+    background: white;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease;
+       -moz-transition: opacity .5s ease;
+         -o-transition: opacity .5s ease;
+            transition: opacity .5s ease;
+}
+
+.dg-item .dg-overlay-text {
+    line-height: 100%;
+    position: absolute;
+    z-index: 11;
+    top: 70%;
+    right: 0;
+    left: 0;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    text-align: center;
+    opacity: 0;
+    color: black;
+    text-transform: uppercase;
+    -webkit-transition: opacity .5s, top .7s, ease;
+       -moz-transition: opacity .5s, top .7s, ease;
+         -o-transition: opacity .5s, top .7s, ease;
+            transition: opacity .5s, top .7s, ease;
+}
+
+.dg-item:hover .dg-overlay {
+    opacity: 1;
+}
+
+.dg-item:hover .dg-overlay-text {
+    opacity: 1;
+    top: 50%;
+}
+
+
+/*secao recursos*/
+
+#recursos{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+.rotacionar{
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  padding-left: 80px;
+}
+/*rodapé*/
+
+footer{
+  background: #000;
+  padding-top: 10px;
+  position: relative;
+}
+
+.item-rede-social{
+  float:right;
+}
+
+#contato{
+  background: rgba(240,235,233,0.4);
+  width: auto;
+  height: 350px;
+}
+
+#contato form{
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#titulo{
+  background: rgb(155,240,225);
+  width: auto;
+  height: 90px;
+}
+
+#titulo h3{
+  font-size: 30px;
+  padding-top: 30px;
+}
+/*########################Tipografia#############################*/
+
+h1{
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px){
+    h1{
+      font-size: 40px;
+    }
+    .btn-custom{
+      margin: 10px 15px;
+    }
+    .teste{
+      padding-bottom: 20px;
+    }
+    .dg-overlay{
+      margin-bottom: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    h1{
+      font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    h1{
+      font-size: 60px;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    h1{
+      font-size: 75px;
+    }
+}
+
+h2{
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+h3{
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+#rodape h4{
+  color:#919496;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#servicos h2{
+  color: #7c25f8;
+}
+
+#servicos h3{
+  color: #7c25f8;
+}
+
+#recursos h3{
+  color: #9bf0e1;
+}
