@@ -3,7 +3,7 @@ body, html, .capa{
   height: 100%;
 }
 body{
-  background: url('imagens/programacao1.jpg');
+  background: url('programacao1.jpg');
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
